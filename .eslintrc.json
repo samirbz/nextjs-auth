@@ -6,9 +6,6 @@
     "prettier"
   ],
   "rules": {
-    "no-console": "off", // Disables the no-console rule
-    "no-unused-vars": "off", // Disables the no-unused-vars rule
-    "react/prop-types": "off", // Disables prop-types check for React components
-    "react/react-in-jsx-scope": "off" // Disables the need to import React in scope for JSX
+    "no-unused-vars": "off"
   }
 }
