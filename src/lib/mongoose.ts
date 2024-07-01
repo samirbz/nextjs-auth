@@ -16,7 +16,6 @@ export async function connect() {
       process.exit()
     })
   } catch (error) {
-    console.log("Something goes wrong!")
     console.log(error)
   }
 }
