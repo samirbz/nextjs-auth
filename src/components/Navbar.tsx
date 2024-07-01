@@ -1,7 +1,10 @@
+"use client"
+import { useAppContext } from "@/context/index"
 import Link from "next/link"
 import React from "react"
 
 const Navbar = () => {
+  const { name } = useAppContext()
   return (
     <nav className="bg-gray-800 p-4">
       <div className="mx-auto max-w-7xl px-4">
@@ -24,6 +27,7 @@ const Navbar = () => {
             >
               Sign Up
             </Link>
+            <p>{name}</p>
           </div>
         </div>
       </div>
