@@ -21,7 +21,7 @@ export default function ProfilePage() {
 
   const getUserDetails = async () => {
     const res = await axios.get("/api/users/me")
-    setData(res.data.data._id)
+    setData(res.data.data.username)
   }
 
   return (

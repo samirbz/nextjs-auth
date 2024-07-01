@@ -1,5 +1,4 @@
 import { getDataFromToken } from "@/lib/actions/user.action"
-
 import { NextRequest, NextResponse } from "next/server"
 import User from "@/models/user.model"
 import { connect } from "@/lib/mongoose"

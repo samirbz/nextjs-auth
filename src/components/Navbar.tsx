@@ -1,7 +1,6 @@
 "use client"
 import { useAppContext } from "@/context/index"
 import Link from "next/link"
-import React from "react"
 
 const Navbar = () => {
   const { name } = useAppContext()
