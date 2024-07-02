@@ -12,13 +12,9 @@ const ForgotPassword = () => {
 
   const onResetPassword = async () => {
     try {
-      const response = await axios.post("/api/users/sign-in", user)
-      console.log("Login success", response.data)
-      toast.success("Login success")
-      // router.push("/")
-      location.assign("/")
+      console.log("reset password")
     } catch (error: any) {
-      console.log("Login failed", error.message)
+      console.log("Reset password failed", error.message)
       toast.error(error.message)
     }
   }
