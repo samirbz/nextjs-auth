@@ -2,7 +2,6 @@
 import axios from "axios"
 import Link from "next/link"
 import React, { useState } from "react"
-import toast from "react-hot-toast"
 
 const ForgotPassword = () => {
   const [user, setUser] = useState({
@@ -15,7 +14,6 @@ const ForgotPassword = () => {
       console.log("reset password")
     } catch (error: any) {
       console.log("Reset password failed", error.message)
-      toast.error(error.message)
     }
   }
 
